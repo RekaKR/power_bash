@@ -15,3 +15,7 @@ https://www.geeksforgeeks.org/bash-scripting-introduction-to-bash-and-bash-scrip
 https://learn.microsoft.com/en-us/training/modules/bash-introduction/
 https://www.datacamp.com/tutorial/how-to-write-bash-script-tutorial
 https://www.geeksforgeeks.org/how-to-run-bash-script-in-linux/
+
+## fontos link
+
+https://people.inf.elte.hu/pepe/szamrend/
