@@ -1,0 +1,84 @@
+3-4. óra
+jelentkezz be szamrendre (ssh) és canvas.elte.hu 
+https://canvas.elte.hu/courses/49189 (nappalis ea.)
+
+https://canvas.elte.hu/courses/50357   -csoport canvas
+
+
+canvas-ból:
+
+5sh.pdf feladatai
+....
+6sh.pdf feladatai
+udvozlo script...
+
+udv.sh
+#!/bin/bash
+# ido szerint
+# 6-9 jo reggelt
+# 10-17 jo napot
+# 18-21 jo estet
+# 22-05 jo ejt
+...
+if test
+man test
+
+#ora=$(date +%H)
+#echo -n "ora=";read ora
+# read -p "ora=" ora
+.............................
+ok!
+
+reg. kif.-ek
+google: ELTE IK reguláris kfejezések
+https://people.inf.elte.hu/csa/regkif.htm
+
+pl. who|grep "^e"|wc -l
+
+if helyett case ut.
+google search: bash case example
+
+udv.sh script case-el:
+minta pl:
+0[6-9])
+...
+
+------------11.13. most
+feladat (hazi-gyakorlas):
+formázott kiírás (? 0.0 0.1, ...)--- hf
+...meg 1 pl.
+for pl. (formazas...)
+tablazat 1-10, 1vel echo -e
+x	x**2	x**3
+-----
+
+-----------7sh.pdf
+feladat (hazi-gyakorlas)
+$# par. szama!
+1. 7. a) -a, -d kapcsolo paraméter
+..........eddig volt...
+awk : hasznos egysoros programok
+doku: 
+https://hup.hu/old/gawk/tobb/gawk_4.html
+................
+
+proba-zh-gyakorlas
+7a.sh -a Pal 06701234567
+  $0  $1 $2   $3
+"$2" nézem : -a "Kis Pal" 0611111111
+(ügyeljünk a dupla elemekre):
+grep "$2" telefon.txt >/dev/null
+if 
+echo "$2",$3 >>telefon.txt
+
+telefon.txt 
+Nev,telszam
+??
+...
+7a.sh -d Pal
+(grep)
+kapcsoló nélkül, 1 param.: nev, keresse ki... (grep)
+
+-----------------------------------------
+case ut...
+

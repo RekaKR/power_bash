@@ -1,0 +1,69 @@
+6-7-pwsh. ora
+canvas.elte.hu
+-------------
+hasznos: https://www.tutorialspoint.com/index.htm
+--------------
+...
+Get-Command 
+
+
+feladatok:
+HF
+1. mentsd el a help-et egy pl. 1help.txt-be
+- vedd ki az ures sorokat
+- szamold meg a nagybetus sorokat, a kisbetuseket is, hany szazalek az
+osszesnek a nagy ill. kisbetus sorok
+(cat .\1help.txt|Select-String -pattern '^$' -Notmatch).count
+(cat .\1help.txt|Select-String -pattern '^$').count
+
+(cat .\1help.txt).count
+
+https://devblogs.microsoft.com/scripting/use-powershell-and-conditional-formatting-to-format-numbers/
+"{0:P}%" -f (42/110)
+v.
+"{0:N2}%" -f (42/110*100)
+
+***************************
+MOST
+
+2. parameterkent megadott mappaban megszamolni a fajlokat es mappakat
+https://www.red-gate.com/simple-talk/sysadmin/powershell/how-to-use-parameters-in-powershell/
+
+ha nincs param. akkor az akt. (.)
+pl. fajlok elerese-  ea-10_ps.pdf, 18 o.
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/format-wide?view=powershell-7.4
+Linux ls parancs: ls | Format-Wide -Column 9
+
+volt*********3. udv script
+switch ut. ea-10_ps.pdf, 21.o.
+
+*********4f. 
+olvass be szavakat bill-rol, mig a vege szot nem irjuk.
+irasd ki rendezve, irasd ki az a betuvel kezdodoeket.
+5f. keszits tablazatot, 1-tol 1-vel 10-ig
+x	x*2	x*3
+3.b 0.1-1 int-ban 5 tiz.jegyre
+https://4sysops.com/archives/do-the-math-with-powershell/
+
+https://ss64.com/ps/syntax-f-operator.html
+https://stackoverflow.com/questions/9904352/how-to-create-printf-effect-in-powershell
+
+6f.
+szam.txt-ben egy szam, adj hozza 1-et es ird vissza!
+
+7f. adott mappa fajlok osszmerete
+
+pl.
+https://superuser.com/questions/468782/show-human-readable-file-sizes-in-the-default-powershell-ls-command
+
+wsl ls -lh
+https://superuser.com/questions/468782/show-human-readable-file-sizes-in-the-default-powershell-ls-command
+
+https://woshub.com/powershell-get-folder-sizes/#google_vignette
+
+-----------
+https://www.sharepointdiary.com/2021/07/get-folder-size-in-powershell.html
+-------------------
+
+12ps.pdf -ből
+

@@ -1,0 +1,114 @@
+1-2. ora, 
+.........................................
+1.ora
+
+bemutatkozas.......
+
+neptun.elte.hu
+canvas.elte.hu neptun kód
+https://canvas.elte.hu
+
+MS Teams
+------------
+...
+inf-es mail cím: usernev@inf.elte.hu
+mail.inf.elte.hu email cím
+...............vagy:
+portal.office.com
+inf.elte.hu vagy student.elte.hu (ELTE, caesar, IIG azonosító)
+
+operator@elte.hu
+
+ssh usernev@caesar.elte.hu - ehhez kell engedély! 
+belépés a caesar info... panelbe: https://info.caesar.elte.hu/
+itt, alapadatok: pl. ssh és honlap engedély!
+IIG jelszóváltás: iig.elte.hu, ugykezelo, neptun kóddal is lehet!
+
+caesar.elte.hu weboldalon, user.web.elte.hu (caesar ssh után web mappa)
+...
+INF-es jelszóváltás, géptermek: w10 vagy.
+https://pandora.inf.elte.hu/passchg - neptun kód és jelszóval lehet.
+---------
+Laborok: dual boot: w10 v. Debian Linux inf-es acc-al.
+............
+szamrend.inf.elte.hu (Debian Linux, belépés ssh-val v. win: putty vagy powershell ssh parancs)
+
+operatorok@inf.elte.hu
+
+AFS (home mappa (~) ), NFS (~/public/public_html/szamrend)
+szamrend.inf.elte.hu login ()
+
+
+...
+ctrl-d
+...
+https://people.inf.elte.hu/usernev (index.html)
+
+------------------------2. óra
+neptun.elte.hu
+canvas.elte.hu
+ssh login szamrend.inf.elte.hu ra (ssh v. putty)
+...
+---------------------szgep felepitese
+https://slideplayer.hu/slide/1985647/
+video
+https://www.youtube.com/watch?v=L6lI-IAtHDk
+
+UEFI, MBR bootolas
+
+MBR boot: BIOS LEGACY mode
+ master boot record
+DOS
+particiok, fo part-boot 
+https://hu.wikipedia.org/wiki/Master_Boot_Record
+https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface
+....
+
+UEFI mode, diskpart (w10) fdisk (linux)
+Laborok: W10 es Debian Linux 10
+
+Multiboot pl. grub2
+http://ubuntu.hu/node/13573
+
+más: http://www.sze.hu/~benyo/edu/AR/2006Tavasz/slides/01_ch01_hun_v01.pdf
+
+dos unix compare
+http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
+
+kov oran: wsl w10 alatt<<<----
+..............
+2. óra
+1. fel.: mail küldés inf-es mail-el!
+ maci@inf.elte.hu
+levél tárgya: 2. óra számrend, Név, neptun kód
+
+jelentkezz be szamrendre (ssh) és canvas.elte.hu 
+
+dos linux parancsok
+
+http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
+... unix (linux) architecture-of-unix-operating-system
+unix op. r. https://www.inf.u-szeged.hu/~kato/teaching/unix/unix1.html
+https://www.notesjam.com/2017/10/architecture-of-unix-operating-system.html
+
+cmd inditasa: cmd parancs (powershell)!!!
+környezeti változók set parancs
+feladatok
+5d
+5e. dos-ban.
+tömörítés, 7zip intézőben és .rar
+
+feltöltés: scp pr. v. winscp
+doskey
+5f hard- soft link
+5g.
+...parancsok: p1;p2 v. p1|p2 v. p1&&p2
+man parancs
+pl. who|sort
+3Unix.pdf
+tömörítés: zip, tar+gzip (linux)
+tar cvzf 2223-1.tgz 22231/
+editorok, ed, vi, nano (pico), mcedit (mc)
+------
+wsl Windows subsystem Linux
+install: https://learn.microsoft.com/en-us/windows/wsl/install
