@@ -148,16 +148,12 @@ Belépés: 		  ssh <neptun>@szamrend
 	else
 	{ Write-Host "Nem nagyobb mint 2."}
 
-
-
-
-
 	
 -----------------------------------------------------------
 -----------------------------------------------------------
 -----------------------------------------------------------
 -----------------------------------------------------------
-# Órai feladat
+# Órai feladatok
 	# 1) faktoriális
 	function nfaktor($n)
 	{
@@ -169,7 +165,6 @@ Belépés: 		  ssh <neptun>@szamrend
 	nfaktor(5) 		# fv meghívás
 	
 ----------------------------------------------------------
-# Órai feladat
 	# 2) parameterkent megadott mappaban megszamolni a fajlokat es mappakat
 	function mappaKontroll($mappa)
 	{
@@ -186,7 +181,6 @@ Belépés: 		  ssh <neptun>@szamrend
 	https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/format-wide?view=powershell-7.4
 
 -----------------------------------------------------------
-# Órai feladat
 	# 3) Üdv script
 	
 	function hello()
@@ -204,7 +198,6 @@ Belépés: 		  ssh <neptun>@szamrend
 	}
 	
 -----------------------------------------------------------
-# Órai feladat
 	# 4f) olvass be szavakat bill-rol, mig a vege szot nem irjuk.
 	# irasd ki rendezve, irasd ki az a betuvel kezdodoeket.
 	
@@ -225,7 +218,6 @@ Belépés: 		  ssh <neptun>@szamrend
 	}
 	
 -----------------------------------------------------------	
-# Órai feladat
 	# 5f) keszits tablazatot, 1-tol 1-vel 10-ig
 	# tabulátorral választja el x1, x2 és x3-at, majd 1-10-ig ciklusban kiírja x2 és x3-at
 	"x`tx*2`tx*3"
@@ -240,7 +232,6 @@ Belépés: 		  ssh <neptun>@szamrend
 	https://stackoverflow.com/questions/9904352/how-to-create-printf-effect-in-powershell
 	
 -----------------------------------------------------------	
-# Órai feladat
 	# 6) adott file-ban (pl. 1szamok.txt) lévő számokra végzett alapműveletek
 	
 	[int]$num=5 > szam.txt
@@ -264,8 +255,7 @@ Belépés: 		  ssh <neptun>@szamrend
 	$atlag
 	
 -----------------------------------------------------------	
-# Órai feladat
-	# 6f) szam.txt-ben egy szam, adj hozza 1-et es ird vissza!adott file-ban (pl. 1szamok.txt) lévő számokra végzett alapműveletek
+	# 6f) szam.txt-ben egy szam, adj hozza 1-et es ird vissza az adott file-ban (pl. 1szamok.txt) lévő számokra végzett alapműveletek
 	
 	# A fájl neve
 	$filePath = "szam.txt"
@@ -284,31 +274,37 @@ Belépés: 		  ssh <neptun>@szamrend
 	Write-Host "A fájl frissítve: $szam -> $korrigaltSzam"
 	
 -----------------------------------------------------------
-	
-	
-	
-	
-	
 -----------------------------------------------------------
 -----------------------------------------------------------
 -----------------------------------------------------------
+
+
 # ZH 1. feladat
 # Készítse el a következő feladatokhoz a shell szkript megoldásokat. 
 # 1) Készítsen 1.sh néven egy szkriptet, amelyik 3 számot vár (parancssorból vagy csövön át) és kiírja őket nagyságrendben. 
 # pl. .\1.sh 4 7 2 => 2 4 7  vagy echo 4 7 2 | .\1.sh => 2 4 7 2. 
 
-	notepad Feladat1_int.txt
-	for ($i=0; $i-le 2; $i=$i+1)
+	notepad Feladat1_int.txt # Megnyitja a fájlt, ha létezik, vagy létrehozza
+
+	# Kérjük be a három számot a felhasználótól
+	for ($i=0; $i -le 2; $i=$i+1)
 	{
 		[int]$szam=Read-Host "szam="
-	  echo $szam >>Feladat1_int.txt
+		echo $szam >> Feladat1_int.txt # Mentjük a fájlba
 
 	}
-	if (test-path Feladat1_int.txt)
-	{
-	  cat Feladat1_int.txt|sort; 	# sorba rendezzük a file tartalmát
+
+	# Ellenőrizzük, hogy létezik-e a fájl
+	if (Test-Path Feladat1_int.txt) {
+			# Sorba rendezzük és megjelenítjük a tartalmat
+			#cat Feladat1_int.txt|sort;
+			Get-Content Feladat1_int.txt | Sort-Object | ForEach-Object { Write-Output $_ }
 	}
-	rm Feladat1_int.txt 			# eljárás végén töröljük a file-t, ez opcionális
+
+	# Fájl törlése a folyamat végén (opcionális)
+	#rm Feladat1_int.txt
+	Remove-Item Feladat1_int.txt
+
 
 -----------------------------------------------------------
 -----------------------------------------------------------

@@ -411,14 +411,14 @@ Fékezni akkor kell, ha az előtte levő autó távolsága K-méternél kisebb. 
 # 1) auto.ps1
 -------------
 
-	Adatfájl elérési útja
+	#Adatfájl elérési útja
 	$adatfajl = "adatfajl.txt"
 
-	Változók inicializálása
+	#Változók inicializálása
 	$elozoido = $null
 	$megallas_szam = 0
 
-	Fájl soronkénti olvasása
+	#Fájl soronkénti olvasása
 	Get-Content $adatfajl | ForEach-Object {
 		# Időbélyeg kinyerése
 		$jelenlegi_ido = ($ -split '\s+')[0]
@@ -441,7 +441,7 @@ Fékezni akkor kell, ha az előtte levő autó távolsága K-méternél kisebb. 
 		$elozo_ido = $jelenlegi_ido
 	}
 
-	Megállások számának kiírása
+	#Megállások számának kiírása
 	Write-Output "Az autó $megallas_szam alkalommal állt meg."
  
 
@@ -453,10 +453,10 @@ Fékezni akkor kell, ha az előtte levő autó távolsága K-méternél kisebb. 
 		[double]$kuszobertek
 	)
 
-	Adatfájl elérési útja
+	#Adatfájl elérési útja
 	$adatfajl = "adatfajl.txt"
 
-	Fájl soronkénti olvasása
+	#Fájl soronkénti olvasása
 	Get-Content $adatfajl | ForEach-Object {
 		# Sor adatainak kinyerése
 		$adatok = $_ -split '\s+'
@@ -473,14 +473,14 @@ Fékezni akkor kell, ha az előtte levő autó távolsága K-méternél kisebb. 
 # 3) legkozelebb.ps1
 --------------------
 
-	Adatfájl elérési útja
+	#Adatfájl elérési útja
 	$adatfajl = "adatfajl.txt"
 
-	Változók inicializálása
+	#Változók inicializálása
 	$legkisebbtavolsag = [double]::MaxValue
 	$legkozelebbi_ido = ""
 
-	Fájl soronkénti olvasása
+	#Fájl soronkénti olvasása
 	Get-Content $adatfajl | ForEach-Object {
 		# Sor adatainak kinyerése
 		$adatok = $ -split '\s+'
@@ -500,7 +500,7 @@ Fékezni akkor kell, ha az előtte levő autó távolsága K-méternél kisebb. 
 		}
 	}
 
-	Legközelebbi időpont kiírása
+	#Legközelebbi időpont kiírása
 	Write-Output "A legközelebbi pillanat $legkozelebbi_ido időpontban volt, $legkisebb_tavolsag távolsággal."
 
 # End

@@ -102,3 +102,12 @@ done < "datafile.txt"
 
 #Output the closest time
 echo "The closest moment was at $closest_time with a distance of $closest_distance."
+
+#/*
+#Requirements and Assumptions
+#Input Data: The scripts assume the data is in a file named datafile.txt with the format:
+#timestamp speed distance_front distance_back
+#Example:
+#2024.12.11 12:34:56.01 60 100 200
+#Date Format: The date and time format (year.month.day hour:minute:second.millisecond) must be consistent for the date command to parse it correctly.
+#*/

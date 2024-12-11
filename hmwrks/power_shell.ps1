@@ -14,7 +14,6 @@
 
 
 
-
 #1. auto.ps1
 #Adatfájl elérési útja
 $adatfajl = "adatfajl.txt"
@@ -106,3 +105,14 @@ Get-Content $adatfajl | ForEach-Object {
 
 #Legközelebbi időpont kiírása
 Write-Output "A legközelebbi pillanat $legkozelebbi_ido időpontban volt, $legkisebb_tavolsag távolsággal."
+
+
+#/*
+#Input File:
+#The data file (adatfajl.txt) must have lines formatted as:
+#timestamp speed distance_front distance_back
+#Example:
+#2024.12.11 12:34:56.01 60 100 200
+#Timestamp Parsing: The timestamp format must match yyyy.MM.dd HH:mm:ss:fff for accurate parsing.
+#PowerShell Version: Requires PowerShell 5.0 or later for robust datetime handling.
+#*/

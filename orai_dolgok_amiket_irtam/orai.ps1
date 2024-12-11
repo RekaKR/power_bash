@@ -38,21 +38,25 @@ ss64 - f-operator
 
 "x`tx*2`tx*3" -> x       x*2     x*3
 notepad 1tabla.ps1 >> létrehozok egy "1tabla" txt-et 
+
 "x`tx*2`tx*3"
+
 for ($x=1;$x -le 10; $x++)
 {
   $x2=$x*$x; $x3=$x*$x*$x
   echo "$x`t$x2`t$x3"
 }
+
 Ctrl+c >> ez hasznos, ha behal a cucc
-megszámolni mappa dolgokat, meg file dolgokat:
+
+# megszámolni mappa dolgokat, meg file dolgokat:
 ls -file - kilistázza a fileokat
 ls -Directory - kilistázza a könyvtárakat
 (ls -Directory).count - számolom
 (ls -file).count - számolom
 (ls).count - itt is számolom
  
-kiirja a paramunkat, amit beadtunk
+# kiirja a paramunkat, amit beadtunk
 $param1=$args[0]
 write-host $param1
 
@@ -85,13 +89,11 @@ echo $mappa
 [Math]::Cos(90)
 
 
-
-  Id CommandLine
-  -- -----------
-   2 wsl -l -o
-   7 $szo=Read-Host "szo="
-   8 $szo
+wsl -l -o
+$szo=Read-Host "szo="
+$szo
 notepad valami.ps1 - file csinálása ezzel a névvel
+
 $szo=Read-Host "szo="
 while ($szo -ne "vege")
 {
@@ -102,12 +104,17 @@ if (test-path szoveg.txt)
 {
   cat szoveg.txt|sort; rm szoveg.txt
 }
- 
-[int]$szam=cat szam.txt //intként beolvasom a szam.txt-ből a számom és elmentem a szam változóba
-$szam=$szam+1 //hozzáadok egyet
-$szam //csak úgy kiiratom
-echo $szam >szam.txt //beleirom/felül irom a szam.txt-be
-cat .\szam.txt // kiirom
+
+# intként beolvasom a szam.txt-ből a számom és elmentem a szam változóba 
+[int]$szam=cat szam.txt
+# hozzáadok egyet
+$szam=$szam+1
+# csak úgy kiiratom
+$szam
+# beleirom/felül irom a szam.txt-be
+echo $szam >szam.txt
+# kiirom
+cat .\szam.txt
 
 
 for ($i=0; $i-le 90; $i=$i+10)
@@ -115,51 +122,51 @@ for ($i=0; $i-le 90; $i=$i+10)
 "{0:N5}" -f ($i*[math]::pi/180)
 }
 
-7 $szo=Read-Host "szo="
-8 $szo
-9 h
-10 notepad valami.ps1
-13 gal rm
-14 h
-15 valami.ps1
-16 cat valami.ps1
-17 szoveg.txt
-23 .\valami.ps1
-24 ls
-25 notepad szam.txt
-26 cat szam.txt
-27 $szam=(cat szam.txt)+1
-28 $szam
-29 $szam=cat szam.txt
-30 $szam
-31 $szam+1
-32 $szam=cat szam.txt
-33 $szam=$zam+1
-34 $szam
-35 $szam=cat szam.txt
-36 $szam=$szam+1
-37 $szam
-38 [int]$szam=cat szam.txt
-39 $szam=$szam+1
-40 $szam
-41 echo $szam >szam.txt
-42 cat .\szam.txt
-43 man ls
-44 ls -File
-45 ls -File
-46 ls -Dir
-47 (ls | measure Length -sum)
-48 (ls | measure Length -sum).sum
-49 ls
-50 (ls -file | measure Length -sum)
-51 (ls -file | measure Length -sum).sum
-52 (ls -file | measure Length -sum).sum / 1Kb
-53 (ls \windoes | measure Length -sum).sum / 1GB
-54 (ls \windwes | measure Length -sum).sum / 1GB
-55 (ls \windows | measure Length -sum).sum / 1GB
-56 (ls \windows | measure Length -sum).sum / 1MB
-57 (ls \windows -Recurse | measure Length -sum).sum / 1MB
-58 (ls \windows | measure Length -sum).sum / 1MB
+$szo=Read-Host "szo="
+$szo
+h
+notepad valami.ps1
+gal rm
+h
+valami.ps1
+cat valami.ps1
+szoveg.txt
+.\valami.ps1
+ls
+notepad szam.txt
+cat szam.txt
+$szam=(cat szam.txt)+1
+$szam
+$szam=cat szam.txt
+$szam
+$szam+1
+$szam=cat szam.txt
+$szam=$zam+1
+$szam
+$szam=cat szam.txt
+$szam=$szam+1
+$szam
+[int]$szam=cat szam.txt
+$szam=$szam+1
+$szam
+echo $szam >szam.txt
+cat .\szam.txt
+man ls
+ls -File
+ls -File
+ls -Dir
+(ls | measure Length -sum)
+(ls | measure Length -sum).sum
+ls
+(ls -file | measure Length -sum)
+(ls -file | measure Length -sum).sum
+(ls -file | measure Length -sum).sum / 1Kb
+(ls \windoes | measure Length -sum).sum / 1GB
+(ls \windwes | measure Length -sum).sum / 1GB
+(ls \windows | measure Length -sum).sum / 1GB
+(ls \windows | measure Length -sum).sum / 1MB
+(ls \windows -Recurse | measure Length -sum).sum / 1MB
+(ls \windows | measure Length -sum).sum / 1MB
 h
 (ls | measure Length -sum).sum
 /3
@@ -178,6 +185,8 @@ notepad konvert.ps1
 notepad valami.ps1
 .\konvert.ps1
 
+
+
  for ($x=0;$x -le 360; $x = $x + 10)
 {
 	write-host -NoNewline $x
@@ -186,12 +195,16 @@ notepad valami.ps1
  
 }
 
-92 notepad konvert.ps1
-94 write-host -NoNewline "szo: "; echo vlmi
-98 for ($i=1; $i-le 20; $i=$i+1) {write-host -NoNewline "x"}
 
-100 ssh c8m9le@szamrend
-101 ctr d kilépés bash scripthez
+notepad konvert.ps1
+write-host -NoNewline "szo: "; echo vlmi
+for ($i=1; $i-le 20; $i=$i+1) {write-host -NoNewline "x"}
+
+
+#bash belépés
+ssh c8m9le@szamrend
+ctr d kilépés bash scripthez
+
 
 $sum=0; [int]$szor=1; $atlag=0; [int]$i=0; [int]$line=0
 foreach($line in Get-Content .\1szamok.txt) {
@@ -203,11 +216,11 @@ $szor=$line*$szor
 $i++
 }
  
+
 $i
 $sum
 $szor
 #$atlag
 Ez nem tudom, h. jó -e
  
-104 h >041224-pwsh-hist.txt
-
+h >041224-pwsh-hist.txt
