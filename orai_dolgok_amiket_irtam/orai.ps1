@@ -115,129 +115,68 @@ for ($i=0; $i-le 90; $i=$i+10)
 "{0:N5}" -f ($i*[math]::pi/180)
 }
 
-   7 $szo=Read-Host "szo="
-
-   8 $szo
-
-   9 h
-
-  10 notepad valami.ps1
-
-  13 gal rm
-
-  14 h
-
-  15 valami.ps1
-
-  16 cat valami.ps1
-
-  17 szoveg.txt
-
-  23 .\valami.ps1
-
-  24 ls
-
-  25 notepad szam.txt
-
-  26 cat szam.txt
-
-  27 $szam=(cat szam.txt)+1
-
-  28 $szam
-
-  29 $szam=cat szam.txt
-
-  30 $szam
-
-  31 $szam+1
-
-  32 $szam=cat szam.txt
-
-  33 $szam=$zam+1
-
-  34 $szam
-
-  35 $szam=cat szam.txt
-
-  36 $szam=$szam+1
-
-  37 $szam
-
-  38 [int]$szam=cat szam.txt
-
-  39 $szam=$szam+1
-
-  40 $szam
-
-  41 echo $szam >szam.txt
-
-  42 cat .\szam.txt
-
-  43 man ls
-
-  44 ls -File
-
-  45 ls -File
-
-  46 ls -Dir
-
-  47 (ls | measure Length -sum)
-
-  48 (ls | measure Length -sum).sum
-
-  49 ls
-
-  50 (ls -file | measure Length -sum)
-
-  51 (ls -file | measure Length -sum).sum
-
-  52 (ls -file | measure Length -sum).sum / 1Kb
-
-  53 (ls \windoes | measure Length -sum).sum / 1GB
-
-  54 (ls \windwes | measure Length -sum).sum / 1GB
-
-  55 (ls \windows | measure Length -sum).sum / 1GB
-
-  56 (ls \windows | measure Length -sum).sum / 1MB
-
-  57 (ls \windows -Recurse | measure Length -sum).sum / 1MB
-
-  58 (ls \windows | measure Length -sum).sum / 1MB
-
-  59 h
-
-  60 (ls | measure Length -sum).sum
-
-  61 /3
-
-  62 1/3
-
-  63 1..10
-
-  64 10..1
-
-  65 [int]$fok=10
-
-  66 $radian=90*3.14/180
-
-  67 $radian
-
-  68 $radian=90*3.14/180
-
-  69 90*3.14/180
-
-  70 $radian=90*[math]::pi/180
-
-  71 $radian
-
-  72 notepad konvert.ps1
-
-  73 .\valami.ps1
-
-  74 notepad valami.ps1
-
-  75 .\konvert.ps1
+7 $szo=Read-Host "szo="
+8 $szo
+9 h
+10 notepad valami.ps1
+13 gal rm
+14 h
+15 valami.ps1
+16 cat valami.ps1
+17 szoveg.txt
+23 .\valami.ps1
+24 ls
+25 notepad szam.txt
+26 cat szam.txt
+27 $szam=(cat szam.txt)+1
+28 $szam
+29 $szam=cat szam.txt
+30 $szam
+31 $szam+1
+32 $szam=cat szam.txt
+33 $szam=$zam+1
+34 $szam
+35 $szam=cat szam.txt
+36 $szam=$szam+1
+37 $szam
+38 [int]$szam=cat szam.txt
+39 $szam=$szam+1
+40 $szam
+41 echo $szam >szam.txt
+42 cat .\szam.txt
+43 man ls
+44 ls -File
+45 ls -File
+46 ls -Dir
+47 (ls | measure Length -sum)
+48 (ls | measure Length -sum).sum
+49 ls
+50 (ls -file | measure Length -sum)
+51 (ls -file | measure Length -sum).sum
+52 (ls -file | measure Length -sum).sum / 1Kb
+53 (ls \windoes | measure Length -sum).sum / 1GB
+54 (ls \windwes | measure Length -sum).sum / 1GB
+55 (ls \windows | measure Length -sum).sum / 1GB
+56 (ls \windows | measure Length -sum).sum / 1MB
+57 (ls \windows -Recurse | measure Length -sum).sum / 1MB
+58 (ls \windows | measure Length -sum).sum / 1MB
+h
+(ls | measure Length -sum).sum
+/3
+1/3
+1..10
+10..1
+[int]$fok=10
+$radian=90*3.14/180
+$radian
+$radian=90*3.14/180
+90*3.14/180
+$radian=90*[math]::pi/180
+$radian
+notepad konvert.ps1
+.\valami.ps1
+notepad valami.ps1
+.\konvert.ps1
 
  for ($x=0;$x -le 360; $x = $x + 10)
 {
